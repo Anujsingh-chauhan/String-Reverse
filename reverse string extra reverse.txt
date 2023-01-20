@@ -1,0 +1,17 @@
+import java.util.*;
+public static void reverseArray(String[] array){
+
+    int middle = array.length / 2;
+
+    String temp;
+    int j = array.length -1;
+
+    for (int i = 0 ; i < middle; i++) {
+        temp = array[i];
+        array[i] = array[j];
+        array[j] = temp;
+        j--;
+      }
+
+    System.out.println(Arrays.toString(array));
+}
